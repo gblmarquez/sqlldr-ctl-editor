@@ -21,7 +21,7 @@ namespace SqlLoaderEditor.Core
             }
             if (string.IsNullOrWhiteSpace(EnclosedBy) == false)
             {
-                ret.Append(string.Format(" ENCLOSED BY '{0}'", EnclosedBy));
+                ret.Append(string.Format(" OPTIONALLY ENCLOSED BY '{0}'", EnclosedBy));
             }
             ret.AppendLine();
 
