@@ -4,13 +4,7 @@ using System.Text;
 
 namespace SqlLoaderEditor.Core
 {
-    public enum LoadMethods
-    {
-        Insert,
-        Append,
-        Replace,
-        Truncate
-    }
+    /// SQL*Loader Syntax Diagrams: http://docs.oracle.com/cd/B10500_01/server.920/a96652/apa.htm
 
     /// <summary>
     /// This is the mainly specification, it's the header of the file.
@@ -63,6 +57,8 @@ namespace SqlLoaderEditor.Core
                     ret.AppendFormat(" BADFILE '{0}'", item.BadFile);
                 if (string.IsNullOrEmpty(item.DiscardFile) == false)
                     ret.AppendFormat(" DISCARDFILE '{0}'", item.DiscardFile);
+
+                // if any clause was added, then we append a new line.
                 if (string.IsNullOrEmpty(item.InFile) == false
                     && string.IsNullOrEmpty(item.BadFile) == false
                     && string.IsNullOrEmpty(item.DiscardFile) == false)

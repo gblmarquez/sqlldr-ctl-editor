@@ -1,5 +1,4 @@
-﻿
-namespace SqlLoaderEditor.Core
+﻿namespace SqlLoaderEditor.Core
 {
     public class DataFileSpecification
     {

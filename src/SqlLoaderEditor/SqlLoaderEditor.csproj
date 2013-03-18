@@ -48,6 +48,7 @@
     <Compile Include="Core\DataFileSpecification.cs" />
     <Compile Include="Core\DataTypeSpecification.cs" />
     <Compile Include="Core\FieldSpecification.cs" />
+    <Compile Include="Core\LoadMethods.cs" />
     <Compile Include="Models\FieldModels.cs" />
     <Compile Include="Core\FileBuilder.cs" />
     <Compile Include="Core\TerminationAndEnclosureSpecification.cs" />

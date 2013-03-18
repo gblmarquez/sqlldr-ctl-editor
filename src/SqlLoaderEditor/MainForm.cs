@@ -104,7 +104,7 @@ namespace SqlLoaderEditor
 
             var operatorsColumn = new DataGridViewTextBoxColumn();
             operatorsColumn.DataPropertyName = "Operators";
-            operatorsColumn.HeaderText = "Operators";
+            operatorsColumn.HeaderText = "SQL Operators";
             operatorsColumn.Name = "Operators";
             operatorsColumn.MinimumWidth = 150;
             yield return operatorsColumn;

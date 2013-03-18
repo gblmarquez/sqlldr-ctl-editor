@@ -3,8 +3,8 @@ namespace SqlLoaderEditor.Core
 {
     public enum DataTypes
     {
-        Constant,
         Char,
+        Constant,
         Date,
         Decimal,
         Double,
